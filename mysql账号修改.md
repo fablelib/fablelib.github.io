@@ -69,7 +69,7 @@ SHOW VARIABLES LIKE 'basedir';
 +---------------+------------------------------------------+
 ```
 
-C:\Program Files\MySQL\MySQL Server 5.1\` 说明确实是 MySQL 5.1，配置文件my.ini大概率就在这个目录下
+`C:\Program Files\MySQL\MySQL Server 5.1\` 说明确实是 MySQL 5.1，配置文件`my.ini`大概率就在这个目录下
 
 
 ## 4 执行操作
@@ -108,10 +108,14 @@ FLUSH PRIVILEGES;
 ```
 
 
-### 4.5 修改secure_file_priv，解决mysql读取全盘的问题。
-新建一个目录：C:\MySQLSecure
-然后修改C:\Program Files\MySQL\MySQL Server 5.1\my.ini
-在port=3306下面加多一句：
+### 4.5 修改`secure_file_priv`，解决mysql读取全盘的问题。
+
+新建一个目录：`C:\MySQLSecure`
+
+然后修改`C:\Program Files\MySQL\MySQL Server 5.1\my.ini`
+
+在`port=3306`下面加多一句：
+
 ```
 secure_file_priv="C:/MySQLSecure"
 ```
